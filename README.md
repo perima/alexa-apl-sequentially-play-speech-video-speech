@@ -49,7 +49,6 @@ const createDirectivePayload = (aplDocumentId, dataSources = {}, tokenId = "myTo
     
 };
 
-  "document": 
 
 ```
 
