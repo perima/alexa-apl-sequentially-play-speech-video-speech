@@ -7,10 +7,12 @@ The lambda function included in this example is based on the sample hello world 
 
 The ```LaunchRequestHandler``` of the lambda function has been modiifed to inflate the APL document and execute the sequential commands that play text to speech, a short sample video and then text to speech again. See the file  ```code/lambda/index.js``` to see where the datasources and sources are defined and how they are passed to the APL document. 
 
-### Using the APL document saved by the Alexa APL authoring tool###
-In this example  the APL json document is part of this repo at ```code/lambda/APL/speechvideospeech.json```. 
+### Using the APL document saved by the Alexa APL authoring tool
+In this example  the APL json document is included at
 
-If you wish to include the APL document saved in the APL authoring tool, you will need to change the document to ```"type": "link"``` instead of using ``` document: require('./APL/speechvideospeech.json'),```
+```code/lambda/APL/speechvideospeech.json```. 
+
+If you wish to directly include the APL document saved in the APL authoring tool instead, you will need to change the document details in the lambda function.
 
 Specifically change 
 
@@ -51,6 +53,7 @@ const createDirectivePayload = (aplDocumentId, dataSources = {}, tokenId = "myTo
 
 ```
 
+*Please note that the location is case sensitive, and you will get URI not valid type errors in your device if you do not input the correct filename.*
 
 
 
