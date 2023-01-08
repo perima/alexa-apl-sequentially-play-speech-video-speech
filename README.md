@@ -40,7 +40,7 @@ const createDirectivePayload = (aplDocumentId, dataSources = {}, tokenId = "myTo
         type: "Alexa.Presentation.APL.RenderDocument",
         token: tokenId,
         document: {
-            "src": "doc://alexa/apl/documents/YOUR_OWN_APL_DOCUMENT_NAME_HERE",
+            "src": "doc://alexa/apl/documents/**YOUR_OWN_APL_DOCUMENT_NAME_HERE**",
             "type": "Link"
         },
         datasources: datasource,
@@ -52,7 +52,7 @@ const createDirectivePayload = (aplDocumentId, dataSources = {}, tokenId = "myTo
 
 ```
 
-*Please note that the location is case sensitive, and you will get URI not valid type errors in your device if you do not input the correct filename.*
+**Please note** *that the location is case sensitive, and you will get URI not valid type errors in your device if you do not input the correct filename.*
 
 
 
