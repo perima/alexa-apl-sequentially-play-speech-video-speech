@@ -14,7 +14,7 @@ In this example  the APL json document is included at
 
 If you wish to directly include the APL document saved in the APL authoring tool instead, you will need to change the document details in the lambda function.
 
-Specifically change 
+Specifically in ``` code/lambda/index.js ``` change 
 
 ```
 
@@ -31,7 +31,7 @@ const createDirectivePayload = (aplDocumentId, dataSources = {}, tokenId = "myTo
 
 ```
 
-*to* 
+**to** 
 
 ```
 
